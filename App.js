@@ -5,11 +5,11 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar } from "react-native";
 const App = () => {
   return (
     <>
-      <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
-        <View style={{ backgroundColor: "green", padding: 16 }}>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.searchBar}>
           <Text>search</Text>
         </View>
-        <View style={{ backgroundColor: "blue", padding: 16, flex: 1 }}>
+        <View style={styles.listBar}>
           <Text>list</Text>
         </View>
       </SafeAreaView>
@@ -18,6 +18,20 @@ const App = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: StatusBar.currentHeight,
+  },
+  searchBar: {
+    backgroundColor: "green",
+    padding: 16,
+  },
+  listBar: {
+    backgroundColor: "blue",
+    padding: 16,
+    flex: 1,
+  },
+});
 
 export default App;
