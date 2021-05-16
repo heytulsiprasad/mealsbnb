@@ -11,12 +11,12 @@ const StyledSafeAreaView = styled.SafeAreaView`
 `;
 
 const SearchBarView = styled.View`
-  background-color: hotpink;
+  background-color: ${(props) => props.theme.colors.bg.primary};
   padding: 16px;
 `;
 
 const ListBarView = styled.View`
-  background-color: lightgreen;
+  background-color: ${(props) => props.theme.colors.bg.primary};
   padding: 16px;
   flex: 1;
 `;
